@@ -217,13 +217,13 @@ colorSwitch:
 
 # 文章分享
 postShare:
-  enable: true
+  enable: false
 
   twitter:
-    enable: true
+    enable: false
 
   facebook:
-    enable: true
+    enable: false
 
 # 代码块配置
 codeBlock:

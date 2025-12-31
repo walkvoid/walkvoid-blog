@@ -6,12 +6,14 @@
       <span>Tags</span>
     </h2>
   </div>
-  <div class="tags-cloud">
+  <div class="tag-list">
     <% site.tags.sort('length', -1).each(function(tag) { %>
-      <a href="<%- url_for(tag.path) %>" class="tag-item">
-        <span><%- tag.name %></span>
-        <span class="tag-count"><%- tag.length %></span>
-      </a>
+      <li>
+        <a href="<%- url_for(tag.path) %>" class="tag-list-link">
+          <span><%- tag.name %></span>
+          <span class="tag-list-count"><%- tag.length %></span>
+        </a>
+      </li>
     <% }) %>
   </div>
 </div>
