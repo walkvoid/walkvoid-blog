@@ -1,0 +1,17 @@
+<!-- 标签列表页，展示本站所有标签，url形式：https://yoursite/tags/ -->
+
+<div class="container tags">
+  <div class="content-title">
+    <h2>
+      <span>Tags</span>
+    </h2>
+  </div>
+  <div class="tags-cloud">
+    <% site.tags.sort('length', -1).each(function(tag) { %>
+      <a href="<%- url_for(tag.path) %>" class="tag-item">
+        <span><%- tag.name %></span>
+        <span class="tag-count"><%- tag.length %></span>
+      </a>
+    <% }) %>
+  </div>
+</div>
